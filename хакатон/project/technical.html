@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Техническое описание - AI Help Desk</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">AI Help Desk</a>
+            <button class="mobile-menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="business-model.html">Бизнес-модель</a></li>
+                <li><a href="competitors.html">Конкуренты</a></li>
+                <li><a href="technical.html">Техническое описание</a></li>
+                <li><a href="ai-demo.html">AI Демо</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-page">
+        <h1 class="section-title">Техническое описание</h1>
+
+        <div class="content-section">
+            <h2>Архитектура</h2>
+            <p>
+                Микросервисная архитектура с разделением на Intake Gateway (email/chat/портал/телефония), NLP/LLM Router, Automation Engine (плейбуки и ответы), Integration Layer (ITSM, CMDB, Asterisk/Genesys/Teams), Monitoring &amp; SLA. Все компоненты масштабируются горизонтально и работают 24/7.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>Технологический стек</h2>
+            <ul>
+                <li><strong>Frontend:</strong> SPA/SSR (React/Vue), real-time панель мониторинга</li>
+                <li><strong>Backend:</strong> Node.js/Python, REST/gRPC, очереди (Kafka/RabbitMQ)</li>
+                <li><strong>AI/ML:</strong> LLM-классификация, intent detection, ru/kk NER, эмбеддинги для поиска статей и плейбуков</li>
+                <li><strong>Инфраструктура:</strong> Kubernetes, Docker, CI/CD, Prometheus + Grafana</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Интеграции и коннекторы</h2>
+            <ul>
+                <li>Email/SMTP, чаты (Telegram/Slack/Teams), портал (REST/Webhooks), телефония (Asterisk/Genesys с STT)</li>
+                <li>ITSM: ServiceNow, Jira Service Management, GLPI и кастомные через API/ETL</li>
+                <li>Knowledge Base: Confluence/SharePoint/Notion для автоответов</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Безопасность</h2>
+            <ul>
+                <li>JWT/OAuth2 для сервисов и операторов</li>
+                <li>Шифрование трафика (TLS) и секретов (KMS/Vault)</li>
+                <li>Валидация/анонимизация PII, журналирование действий</li>
+                <li>Rate limiting и защита от prompt injection</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Ключевые функции модели</h2>
+            <ul>
+                <li>Определение категории/приоритета/типа с высоким precision/recall</li>
+                <li>Автоэскалация сложных кейсов в профильные департаменты</li>
+                <li>Генерация готовых ответов, резюме переписки и перевод ru/kk</li>
+                <li>Авто-решение типовых инцидентов через плейбуки (скрипты, runbooks)</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="business-model.html">Бизнес-модель</a>
+                <a href="competitors.html">Конкуренты</a>
+                <a href="technical.html">Техническое описание</a>
+                <a href="ai-demo.html">AI Демо</a>
+            </div>
+            <p>&copy; 2024 AI Startup. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

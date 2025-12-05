@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Демо - AI Help Desk</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">AI Help Desk</a>
+            <button class="mobile-menu-toggle">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="business-model.html">Бизнес-модель</a></li>
+                <li><a href="competitors.html">Конкуренты</a></li>
+                <li><a href="technical.html">Техническое описание</a></li>
+                <li><a href="ai-demo.html">AI Демо</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content-page">
+        <h1 class="section-title">AI Help Desk Демо</h1>
+        <p style="text-align:center;color:#cccccc;margin-top:-10px;">
+            Попробуйте, как работает автоклассификация и автоответы без участия 1-й линии.
+        </p>
+        
+        <div class="ai-demo-container">
+            <div class="content-section" style="margin-top:0;">
+                <h3>Что можно спросить</h3>
+                <ul>
+                    <li>«Не работает VPN в Астане, ошибка аутентификации»</li>
+                    <li>«Нужен доступ в 1С Бухгалтерия до понедельника»</li>
+                    <li>«Телефон не звонит, клиенты не дозваниваются»</li>
+                    <li>«Request in English or қазақша — бот классифицирует и ответит»</li>
+                </ul>
+            </div>
+            <div class="ai-chat-container">
+                <div id="chat-messages" class="chat-messages">
+                    <div class="message ai">
+                        Привет! Я виртуальная 1-я линия. Опишите проблему, а я определю категорию, приоритет, отдел и предложу готовый ответ.
+                    </div>
+                </div>
+                
+                <div class="chat-input-container">
+                    <input 
+                        type="text" 
+                        id="chat-input" 
+                        class="chat-input" 
+                        placeholder="Введите ваше сообщение..."
+                        autocomplete="off"
+                    >
+                    <button id="send-button" class="send-button">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Главная</a>
+                <a href="business-model.html">Бизнес-модель</a>
+                <a href="competitors.html">Конкуренты</a>
+                <a href="technical.html">Техническое описание</a>
+                <a href="ai-demo.html">AI Демо</a>
+            </div>
+            <p>&copy; 2024 AI Startup. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/ai-demo.js"></script>
+</body>
+</html>
+
